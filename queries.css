@@ -1,0 +1,307 @@
+/* MEDIA QUERIES */
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+@media (max-width: 84em) {
+  .banner-blue-item div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */
+  }
+  .earn-text-box {
+    margin-top: 12rem;
+  }
+}
+/**************************/
+/* BELOW 1220px  */
+/**************************/
+@media (max-width: 81em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+  .footer-section {
+    justify-items: center;
+  }
+}
+@media (max-width: 77em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 50%;
+  }
+  .footer-section {
+    justify-items: center;
+  }
+}
+/* SMALKLER */
+@media (max-width: 65em) {
+  .header {
+    /* background-color: red; */
+    padding: 0 5rem;
+    position: relative;
+  }
+  /* MOBILE NAVIGATIOn */
+  .icon-mobile-nav {
+    /* z-index: 100; */
+    display: block;
+  }
+  .main-nav {
+    background-color: rgb(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    /* ANimation kaa lia */
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    /* z-index: 1; */
+
+    /* HIde the navigation */
+    /* display: none; */
+    /* BY upplying up will not allow transition */
+    /* Hide it by doing its opcaity low */
+    opacity: 0;
+
+    /* Accessible to mouse and keyboard */
+    pointer-events: none;
+    /* hid it from sceen */
+    visibility: hidden;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+  .main-nav-list {
+    flex-direction: column;
+  }
+  .hero-icon-btc {
+    z-index: -1;
+  }
+  .btn a {
+    font-size: 2rem;
+  }
+  .main-nav-link a {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 59em) {
+  .heading-set {
+    padding-right: 3rem;
+  }
+  .trust-process {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .portfolio {
+    grid-template-columns: 1fr;
+  }
+  .portfolio-img {
+    /* grid-column: 1/2; */
+    grid-row: 1/2;
+  }
+  .proftfolio-text-left {
+    margin-right: 10rem;
+    margin-left: 10rem;
+
+    /* align-items: end; */
+  }
+  .trust-process {
+    grid-template-columns: 1fr;
+  }
+  .learnmore-span {
+    margin-top: 3rem;
+  }
+  .section-WhyTrust {
+    margin-bottom: 10rem;
+  }
+  .earn-text-box {
+    margin-top: 7rem;
+  }
+  .cryptowroth-description {
+    line-height: 2;
+  }
+  table {
+    width: 80rem;
+  }
+}
+/* BELOW 704px (Smaller tablets) */
+@media (max-width: 44em) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-text-box {
+    margin: 0 auto;
+  }
+  .heading-primary span {
+    display: inline-block;
+  }
+  .hero-input {
+    height: 6rem;
+    padding-left: 1rem;
+    padding-right: 20rem;
+    border-radius: 0.5rem;
+    border: none;
+    border: 1px solid #e2e2e2;
+  }
+  .btn-getstarte {
+    padding: 0rem 10rem;
+  }
+  .earn-text-box {
+    margin-top: 2.5rem;
+    margin-left: 3rem;
+  }
+  .earnupto {
+    grid-template-columns: 1fr;
+  }
+  .earn-img {
+    display: none;
+  }
+  .earn-text-box {
+    align-items: center;
+    color: white;
+    padding: 6rem;
+  }
+  /* #113355 */
+  .earn-paragraph {
+    /* display: block; */
+    align-items: center !important;
+  }
+  .earnupto {
+    background-color: #113355;
+  }
+  .footer-section {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-one {
+    grid-column: 1/-1;
+  }
+  .footer-section {
+    justify-content: none;
+    justify-items: start;
+    padding: 2rem;
+  }
+  .sidebyside {
+    grid-template-columns: 1fr;
+  }
+  .text-E {
+    align-items: center;
+  }
+  .notblock {
+    display: inline-block !important;
+    align-items: center;
+  }
+  .crypto-table {
+    align-items: center;
+  }
+  .crypto-table div {
+    border: 1px solid #dddddd;
+    width: 100%;
+    padding: 1.2rem 2rem;
+    padding-left: 3rem;
+  }
+
+  .Earn-crypto {
+    margin-left: 25rem;
+  }
+}
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+@media (max-width: 40em) {
+  .section-table {
+    display: none;
+  }
+  .hero-input {
+    height: 6rem;
+    padding-left: 1rem;
+    padding-right: 15rem;
+    border-radius: 0.5rem;
+    border: none;
+    border: 1px solid #e2e2e2;
+  }
+  .set-input {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .hero-input {
+    width: 100%;
+  }
+  .btn-getstarte {
+    width: 100%;
+    padding: 0rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .explore {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 3rem 0 3rem 0;
+  }
+
+  .explore-img {
+    margin: 0 auto;
+  }
+  .explore-text {
+    text-align: center;
+  }
+  .banner-blue-item {
+    grid-template-columns: 1fr;
+    row-gap: 9rem;
+  }
+  .earn-text-box {
+    text-align: center;
+  }
+  .crypto-table div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    gap: 2rem;
+    /* justify-content: space-between; */
+    /* background-color: red; */
+    padding: 1.2rem 2rem;
+  }
+  .Earn-crypto {
+    margin-left: 0;
+  }
+  .for-inner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+/* MORE MOBILE SMALLER */
+@media (max-width: 24rem) {
+  html {
+    /* 9px / 16px  */
+    font-size: 40%;
+  }
+}
+@media (max-width: 24rem) {
+  html {
+    /* 9px / 16px  */
+    font-size: 35%;
+  }
+}
